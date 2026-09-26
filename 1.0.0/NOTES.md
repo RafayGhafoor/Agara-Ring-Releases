@@ -17,4 +17,4 @@ Estimates from the ring's optical sensor (blood pressure, glucose, blood compone
 
 **Updated build (2026-09-26):** fixes pairing on phones where Bluetooth was off when the app first opened — the ring scan now starts reliably. Same version 1.0.0; install it over the previous download.
 
-**Updated build (2026-09-26):** new Agara Life app icon. Same version 1.0.0; install it over the previous download.
+**Updated build (2026-09-26):** new Agara Life app icon, filled edge-to-edge (an earlier build in this same update left a visible white margin around the badge). Same version 1.0.0; install it over the previous download.
