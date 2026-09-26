@@ -14,3 +14,5 @@ The first release of **Agara Ring** for Android.
 **Install:** download `app-universal-release.apk` below and open it on your phone. Checksums: `SHA256SUMS.txt`.
 
 Estimates from the ring's optical sensor (blood pressure, glucose, blood components) are for wellness, not diagnosis.
+
+**Updated build (2026-09-26):** fixes pairing on phones where Bluetooth was off when the app first opened — the ring scan now starts reliably. Same version 1.0.0; install it over the previous download.

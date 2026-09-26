@@ -6,14 +6,13 @@ from a ring you barely notice; your data syncs straight from the ring to your ph
 This repository only hosts release files — there is no source code here.
 
 ## Install (Android)
-1. Open the folder of the latest version (e.g. [`1.0.0/`](1.0.0/)) and download `app-universal-release.apk`
+1. Open the latest release on the **Releases** page and download `app-universal-release.apk`
    (works on every phone; `arm64-v8a` is smaller for modern phones, `armeabi-v7a` for older 32-bit ones).
-   Each version is also a git tag (`1.0.0`).
 2. Open the file on your phone and allow installing from your browser/files app when Android asks.
 3. Open **Agara Ring**, pair your ring, and let the first sync finish.
 
 ## Check the download
-Each version folder has SHA-256 checksums (`SHA256SUMS.txt`) and release notes (`NOTES.md`). All builds are signed with the same Agara key:
+Every release lists SHA-256 checksums (`SHA256SUMS.txt`). All builds are signed with the same Agara key:
 `SHA-256 9E:93:D9:B9:45:8D:17:C2:31:BF:AA:95:B0:7E:53:3B:9C:29:AE:C3:48:66:7F:1A:68:86:CF:ED:67:9F:F3:0D`.
 
 ## Support
