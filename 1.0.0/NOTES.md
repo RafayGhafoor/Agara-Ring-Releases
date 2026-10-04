@@ -1,4 +1,4 @@
-The first release of **AGARA Health** (formerly Agara Ring) for Android.
+The first release of **AGARA Heart** (formerly Agara Ring) for Android.
 
 **Highlights**
 - **Your day at a glance** — steps, sleep (night + naps), heart rate, blood oxygen and more on Today, with charts you can scrub for exact values.
@@ -21,4 +21,4 @@ Estimates from the ring's optical sensor (blood pressure, glucose, blood compone
 
 **Updated build (2026-09-26):** the "Set up Agara Ring" screen now shows the real Agara Life badge — it was showing an unrelated placeholder mark. Same version 1.0.0; install it over the previous download.
 
-**Updated build (2026-10-04, build 1000003):** the app is now **AGARA Health** with a new icon (including a themed-icon layer on Android 13+). Live heart rate is now a setting (Settings › Auto-measure, off by default) instead of always streaming, and automatic measurements default to every 30 minutes for each metric. Same version 1.0.0; install it over the previous download.
+**Updated build (2026-10-04, versionCode 1010003):** the app is now **AGARA Heart** with a new icon (including a themed-icon layer on Android 13+). Live heart rate is now a setting (Settings › Auto-measure, off by default) instead of always streaming, and automatic measurements default to every 30 minutes for each metric. Same version 1.0.0; install it over the previous download. Also updates the widget library (Glance 1.1.1, fixes a protobuf security advisory) and a storage library to its stable release.

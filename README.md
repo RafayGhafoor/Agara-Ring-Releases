@@ -1,6 +1,6 @@
-# AGARA Health — releases
+# AGARA Heart — releases
 
-Official builds of the **AGARA Health** app for Android (formerly "Agara Ring"). AGARA Health tracks your sleep, heart, activity and recovery
+Official builds of the **AGARA Heart** app for Android (formerly "Agara Ring"). AGARA Heart tracks your sleep, heart, activity and recovery
 from a ring you barely notice; your data syncs straight from the ring to your phone and stays yours.
 
 This repository only hosts release files — there is no source code here.
@@ -10,9 +10,9 @@ GitHub APKs are signed differently and can't update each other; pick one channel
 
 ## Install (Android)
 1. Open the latest release on the **Releases** page and download `app-universal-release.apk`
-   (works on every phone; `arm64-v8a` is smaller for modern phones, `armeabi-v7a` for older 32-bit ones).
+   (works on every phone).
 2. Open the file on your phone and allow installing from your browser/files app when Android asks.
-3. Open **AGARA Health**, pair your ring, and let the first sync finish.
+3. Open **AGARA Heart**, pair your ring, and let the first sync finish.
 
 ## Check the download
 Every release lists SHA-256 checksums (`SHA256SUMS.txt`). All builds are signed with the same Agara key:
