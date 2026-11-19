@@ -1,53 +1,94 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy · AGARA Heart</title><meta name="description" content="How the AGARA Heart ring app handles your data.">
+<title>Privacy Policy · AGARA Heart</title><meta name="description" content="How the AGARA Heart app and optional Agara Cloud handle your data.">
 <link rel="icon" href="../logo.png"><link rel="stylesheet" href="../style.css"></head>
 <body><header><img src="../logo.png" alt="" width="44" height="44"><a class="brand" href="../">AGARA HEART</a>
 <nav><a href="../privacy/">Privacy</a><a href="../terms/">Terms</a><a href="../support/">Support</a><a href="../delete-data/">Delete data</a></nav></header>
 <main><h1>Privacy Policy</h1>
-<p class="meta">AGARA Heart app · Last updated 29 September 2026</p>
-<p class="lead">Short version: in the current version of AGARA Heart your health data stays on your phone. There is no account, no advertising and no analytics, and we do not receive your data.</p>
+<p class="meta">AGARA Heart app, version 1.1 and later · Last updated 29 September 2026</p>
+<p class="lead">Short version: your ring data lives on your phone. Agara Cloud is optional. Only if you agree, create an account and verify your email does the app upload a copy of your readings, daily totals and sleep to Agara's servers, to back them up and sync them between your devices. The AI coach is optional too, and only sends a short summary to an AI provider after you agree to its own disclosure. We do not sell your data, show ads or track you.</p>
 
 <h2>Who we are</h2>
-<p>The AGARA Heart app is provided by Agara Life LLC ("we", "us"). Contact: <a href="mailto:support@agaralife.com">support@agaralife.com</a>.</p>
+<p>The AGARA Heart app is provided by Agara Life LLC ("we", "us"), the controller of the data described here. Contact: <a href="mailto:support@agaralife.com">support@agaralife.com</a>.</p>
 
-<h2>What the app handles</h2>
+<h2>What stays on your phone</h2>
 <ul>
-<li><strong>Ring data</strong> received over Bluetooth: heart rate, blood-oxygen (SpO₂), heart-rate variability and stress estimates, sleep, steps, activity, battery and ring settings. The ring can also report other wellness estimates; the app stores what the ring sends on your phone even if it does not show every value.</li>
-<li><strong>Your profile</strong> if you enter it: name, age, sex, height, weight and goals, used to personalise estimates such as calories.</li>
-<li><strong>Workouts</strong>, including a GPS route if you record one and allow location access.</li>
-<li><strong>Settings and preferences</strong> for the app.</li>
+<li><strong>Ring data</strong> received over Bluetooth: heart rate, blood oxygen (SpO₂), heart-rate variability, stress estimates, sleep, steps, activity, battery and ring settings.</li>
+<li><strong>Your profile</strong> if you enter it (name, age, sex, height, weight, goals), <strong>workouts</strong> including a GPS route if you record one, and the app's <strong>settings</strong>.</li>
 </ul>
-<p>All of this is stored <strong>only on your phone</strong>, in the app's private storage. We do not run a server that receives it.</p>
+<p>Without an Agara Cloud account all of this is stored <strong>only on your phone</strong>, in the app's private storage, and we do not receive it. The app works fully without an account.</p>
+
+<h2>What is uploaded, and only after you opt in</h2>
+<p>Nothing is sent to Agara until you open <em>Settings › Agara Cloud</em>, read the consent screen, tap <em>Agree and continue</em>, and sign in with a verified email address. Then the app uploads:</p>
+<ul>
+<li><strong>Your account email address.</strong></li>
+<li><strong>Health readings from your ring</strong>: heart rate, blood oxygen (SpO₂), HRV, stress, blood pressure, temperature and the other measurements Agara stores, with their timestamps. This is health data.</li>
+<li><strong>Daily totals</strong>: steps, distance and calories.</li>
+<li><strong>Sleep</strong>: when each night started and ended, the stage minutes and the score.</li>
+<li><strong>Technical details of the sync</strong>: a random identifier for the app installation, the platform (iOS or Android), the app version and the time of the last sync. This lets us show which devices sync and fix problems.</li>
+</ul>
+<p><strong>Not uploaded:</strong> workouts and routes, coach conversations, your profile and settings, and sample data. Coach conversations are not stored on our server; the AI coach section below explains what the coach itself sends to an AI provider when you agree to it. Data you have written to Apple Health or Health Connect is not read back and is not sent to us; the app does not read health data from those services for Agara Cloud.</p>
+<p>The app uploads in the background about every two hours when your phone allows it, when you open the app, and when you tap <em>Sync now</em>. You can stop at any time by signing out, and you can delete your account (see below).</p>
+
+<h2>Where it is stored, and who processes it</h2>
+<ul>
+<li><strong>Agara's server.</strong> Cloud data is stored on a server operated for us, in the United States, against your account.</li>
+<li><strong>Google Firebase Authentication</strong> (Google LLC) is our processor for sign-in. It holds your email address and your password in hashed form, and sends the verification and password-reset emails. Agara never sees your password. Google processes this data under its own terms and privacy policy.</li>
+<li><strong>Our infrastructure providers</strong> (server hosting and network protection) process traffic on our behalf to deliver the service. They may not use it for their own purposes.</li>
+</ul>
+<p>Health data is stored on our server only, not with Google. The AI coach is the one exception, and only with your separate agreement (see below). We use no analytics or advertising service, and the app contains no advertising or tracking software.</p>
+
+<h2>Why we use it</h2>
+<p>Only to run Agara Cloud: to back up your data and sync it between your devices, to sign you in and verify your email, to keep the service secure and to answer your support requests. We do not use it for advertising, profiling or marketing, and we do not use it to train models.</p>
+
+<h2>The AI coach</h2>
+<p>The coach is optional. When you use the cloud coach, your question and a short numeric summary of your health data are sent through our proxy to a third-party AI provider so it can write an answer. This happens only after you sign in and agree on the coach's own disclosure screen. That screen is separate from the Agara Cloud backup consent: agreeing to back up your data does not turn the cloud coach on.</p>
+<ul>
+<li><strong>What is sent:</strong> your question and a short numeric summary of your recent readings, sleep and activity. Not your raw sensor data, and not your name, email address, city or location.</li>
+<li><strong>Who answers:</strong> OpenCode Go, running a DeepSeek model. It is a third-party AI provider, not Agara, and it receives only the question and that summary.</li>
+<li><strong>Retention:</strong> the provider agrees to zero-day retention and does not train on your data. Our proxy holds a question and its answer in memory only while the coach is answering, then drops them. We do not store coach conversations on our server.</li>
+<li><strong>Changing your mind:</strong> <em>Settings › AI Coach › Cloud coach consent › Withdraw</em>. Cloud answers stop at once and the coach stops sending anything. On iPhone the coach then answers on your phone's own model.</li>
+</ul>
+<p>If you never agree to the coach's disclosure, the cloud coach cannot be used and none of this is sent.</p>
 
 <h2>Permissions we ask for, and why</h2>
 <ul>
-<li><strong>Bluetooth</strong> — to find and talk to your ring. Not used to locate you.</li>
-<li><strong>Notifications</strong> — sync and measurement alerts. Optional.</li>
-<li><strong>Location (while using the app)</strong> — only to record a workout route. Optional.</li>
-<li><strong>Apple Health / Health Connect</strong> — optional. If you allow it, the app writes your activity, sleep, heart-rate and oxygen data there so other apps you choose can use it. You control this in the Health app / Health Connect and can revoke it at any time. We do not use data from Apple Health or Health Connect for advertising, and we do not share it with anyone.</li>
+<li><strong>Bluetooth</strong>: to find and talk to your ring. Not used to locate you.</li>
+<li><strong>Notifications</strong>: sync and measurement alerts. Optional.</li>
+<li><strong>Location (while using the app)</strong>: only to record a workout route. Optional. Routes are not uploaded.</li>
+<li><strong>Apple Health / Health Connect</strong>: optional. If you allow it, the app writes your activity, sleep, heart-rate and oxygen data there so other apps you choose can use it. You control this in the Health app or Health Connect and can revoke it at any time. We do not use data from Apple Health or Health Connect for advertising and do not share it.</li>
+<li><strong>Internet</strong>: used by Agara Cloud once you have opted in, by Google's sign-in service, and by the AI coach once you have agreed to its own disclosure. Nothing else in the app uses the network.</li>
 </ul>
 
 <h2>Sharing</h2>
-<p>We do not sell your data and do not share it with third parties. The app contains no advertising or tracking software. Files you export from the app go where you send them.</p>
-
-<h2>Features that may come later</h2>
-<p>Optional features such as cloud backup or an AI coach are not part of this version. If we add them, this policy will be updated first, and any feature that sends health data off your phone will ask for your explicit consent before it does.</p>
+<p>We do not sell your data and we do not share it with third parties for their own use. It is disclosed only to the processors above, and where the law requires it. Files you export from the app go where you send them.</p>
 
 <h2>Security</h2>
-<p>Your data is protected by your phone's own security (screen lock, encryption, app sandbox). The ring connects to your phone over Bluetooth Low Energy. The ring does not currently support a secure pairing passcode, so keep it with you; someone within Bluetooth range could try to connect to it while it is not connected to your phone.</p>
+<p>Data travels between the app and our servers over an encrypted connection (TLS). Cloud data is accessible only to your account: our servers accept a request only with a valid sign-in token and return only that account's data. Sign-in tokens are stored in your phone's secure storage (iOS Keychain, or the Android Keystore). Locally, your data is protected by your phone's own security (screen lock, encryption, app sandbox). No system is perfectly secure.</p>
+<p>The ring connects to your phone over Bluetooth Low Energy. The ring does not currently support a secure pairing passcode, so keep it with you; someone within Bluetooth range could try to connect to it while it is not connected to your phone.</p>
 
-<h2>How long we keep data, and deleting it</h2>
-<p>Data stays on your phone until you remove it. In the app, go to <em>Settings › Privacy › Delete all my data</em>, or uninstall the app. Data you allowed the app to write to Apple Health or Health Connect stays there until you delete it in those apps. See <a href="../delete-data/">How to delete your data</a>.</p>
+<h2>How long we keep data</h2>
+<p>Cloud data is kept until you delete your account. Deleting it erases your readings, daily totals, sleep records, device entries and your account from our server, and your sign-in record from Google Firebase Authentication. Encrypted server backups made before the deletion are replaced as they rotate out, within 90 days. Data on your phone stays until you delete it there. Data you wrote to Apple Health or Health Connect stays there until you delete it in those apps.</p>
+
+<h2>How to delete your data</h2>
+<ul>
+<li><strong>In the app:</strong> <em>Settings › Agara Cloud › Delete account</em>. This erases the cloud copy for good. Your data on the phone stays.</li>
+<li><strong>Without the app:</strong> ask us by email, from the address of your account, at <a href="mailto:support@agaralife.com">support@agaralife.com</a>. We confirm the request with that address and delete within 30 days.</li>
+<li><strong>Data on your phone:</strong> <em>Settings › Privacy › Delete all my data</em>. This also signs you out on that phone, but does not delete your cloud account.</li>
+</ul>
+<p>Details and steps are on <a href="../delete-data/">How to delete your data or account</a>.</p>
 
 <h2>Your rights</h2>
-<p>Because we do not hold your data, access, correction and deletion are done directly in the app. If you are in the EU/UK or California and want to exercise a privacy right, or have a question, email <a href="mailto:support@agaralife.com">support@agaralife.com</a>.</p>
+<p>You can ask to access, correct, export or delete your data, and to object to or restrict how it is used. In the app you can export your data from <em>Settings › Data &amp; Export</em>; the cloud copy contains the same readings, daily totals and sleep. Deleting your account is available in the app at any time. If you are in the EU, the UK or California, these are your rights under the GDPR, the UK GDPR and the CCPA/CPRA; we do not sell or share personal information for advertising and do not discriminate against you for using these rights. To use any right, or to complain, email <a href="mailto:support@agaralife.com">support@agaralife.com</a>. You may also contact your local data protection authority. We rely on your consent (the consent screen) for cloud processing, which you can withdraw at any time by signing out or deleting your account.</p>
+
+<h2>Where your data is processed</h2>
+<p>Cloud data is stored in the United States. Google Firebase Authentication may process sign-in data in the United States and other countries where Google operates. If you are outside the United States, your data is transferred there when you use Agara Cloud.</p>
 
 <h2>Children</h2>
-<p>AGARA Heart is intended for adults. It is not directed at children under 13, and we do not knowingly collect data from them.</p>
+<p>AGARA Heart is intended for adults. It is not directed at children under 13 (or under 16 where the law sets that age), and we do not knowingly collect data from them. If you believe a child has created an account, email us and we will delete it.</p>
 
 <h2>Changes</h2>
-<p>We will post changes on this page and update the date above. Material changes will also be announced in the app.</p></main>
+<p>We will post changes on this page and update the date above. Material changes will also be announced in the app, and any new kind of data that leaves your phone will ask for your consent first.</p></main>
 <footer>© 2026 Agara Life LLC. AGARA Heart is a wellness product, not a medical device. ·
 <a href="../privacy/">Privacy</a> · <a href="../terms/">Terms</a> · <a href="../support/">Support</a> ·
 <a href="mailto:support@agaralife.com">support@agaralife.com</a></footer></body></html>
